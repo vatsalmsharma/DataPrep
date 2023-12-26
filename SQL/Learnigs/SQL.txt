@@ -1,0 +1,16 @@
+POSTGRES
+
+    dense_rank() over (partition by <col_name> order by <col_name> )
+
+    string_agg(<col_name with string data-type>, ',') 
+    string_agg(<col_name with integer data-type> ::text, ',') 
+        string_agg(distinct <col_name>, ',')
+
+    For default NULL Values
+        COALESCE(<col_name>, <default_value>)
+    
+    Day of the week (dow) => extract (dow from current_date)
+        -- Sunday 0
+        -- Monday 1
+        -- Saturday 6
+    Date-Time documentation : https://www.postgresql.org/docs/8.1/functions-datetime.html

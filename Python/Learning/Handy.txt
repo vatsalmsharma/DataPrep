@@ -1,0 +1,8 @@
+ord()
+    Return the integer (unicode number) that represents the character
+
+    eg. ord('a') return 97 
+
+chr()
+    Get the character that represents the unicode number 
+    eg. chr(97) return 'a'
