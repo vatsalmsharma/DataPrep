@@ -14,3 +14,21 @@ POSTGRES
         -- Monday 1
         -- Saturday 6
     Date-Time documentation : https://www.postgresql.org/docs/8.1/functions-datetime.html
+
+    Rolling Sum
+        sum(col_name) over (order by col_name rows between <unbounded/offset> preceding and <unbounded/offset> following)
+
+            UNBOUNDED PRECEDING
+            offset PRECEDING
+            CURRENT ROW
+            offset FOLLOWING
+            UNBOUNDED FOLLOWING
+
+            sum(Sales) over() => Summation of all values 
+            sum(Sales) over (order by SaleYear, SaleMonth rows between UNBOUNDED preceding and UNBOUNDED FOLLOWING) as same_sum-as_above
+
+            sum(Sales) over (order by SaleYear, SaleMonth rows between 2 preceding and 0 preceding) as rolling_3_month_sum
+
+            https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-WINDOW-FUNCTIONS
+        Other rolling value can be max, min, avg 
+        

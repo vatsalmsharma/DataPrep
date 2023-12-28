@@ -6,3 +6,46 @@ ord()
 chr()
     Get the character that represents the unicode number 
     eg. chr(97) return 'a'
+
+List
+    Given a list say nums = [1,2,5,6,7,9]
+    to check if 5 is there in the list => (5 in nums) return boolean True
+    to get index of 5 in the list      => nums.index(5) return integer 2
+
+    The list index() method can take a maximum of three arguments:
+        element - the element to be searched
+        start (optional) - start searching from this index
+        end (optional) - search the element up to this index
+    
+    Example:
+    # alphabets list
+    alphabets = ['a', 'e', 'i', 'o', 'g', 'l', 'i', 'u']
+
+    # index of 'i' in alphabets
+    index = alphabets.index('e')   # 1
+
+    print('The index of e:', index)
+
+    # 'i' after the 4th index is searched
+    index = alphabets.index('i', 4)   # 6
+
+    print('The index of i:', index)
+
+    # 'i' between 3rd and 5th index is searched
+    index = alphabets.index('i', 3, 5)   # Error!
+
+    print('The index of i:', index)
+
+String
+    Sort the alphabets in a string.
+        InString = 'cat'
+        SortString = ''.join(sorted(InString))  => 'act'
+
+        other way 
+        lst = list(InString)
+        lst.sort()
+        for i in lst:
+            print(i, end = "")
+    Note: sorted doesn't change the original string, returns sorted list of values in the string 
+          sort changes the original list 
+          
