@@ -48,4 +48,12 @@ String
             print(i, end = "")
     Note: sorted doesn't change the original string, returns sorted list of values in the string 
           sort changes the original list 
-          
+
+Set 
+    Given set numSet
+        numSet.pop() will give the value that can be assigned, i.e., popedElement = numSet.pop()
+        
+        if we pass a specific value say 3 to be removed from the set, it will not return the value 3
+            numSet.remove(3) => will just remove the value 3 from set.
+            removedVal = numSet.remove(3) => removedVal will be None
+
