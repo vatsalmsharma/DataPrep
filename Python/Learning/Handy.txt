@@ -48,6 +48,10 @@ String
             print(i, end = "")
     Note: sorted doesn't change the original string, returns sorted list of values in the string 
           sort changes the original list 
+    
+    Given string s = 'AbCdef'
+        s.lower() will give lowecase string but will not change original string s 
+        This can be done by s = s.lower()
 
 Set 
     Given set numSet
