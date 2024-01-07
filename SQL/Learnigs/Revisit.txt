@@ -1,0 +1,2 @@
+Query 10 : To get Consective days - by subtracting the row_number value 
+Query 11 : Clubing records based on platform using 'group by  - having claue' and max(platform)

@@ -31,4 +31,13 @@ POSTGRES
 
             https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-WINDOW-FUNCTIONS
         Other rolling value can be max, min, avg 
+    
+    Casting
+        Value to integer
+            '5' :: INTEGER 
+        
+        row_number() return Big-Int value 
+
+    Consective Days (Query 10)        
+        date_value + (-1 * (row_number() over(partition by state order by date_value asc))) :: integer as group_date
         
